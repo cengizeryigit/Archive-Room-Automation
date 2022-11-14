@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8FD81E5-687A-4550-AE44-5246D4899082}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Arsiv_Projesi</RootNamespace>
+    <AssemblyName>Arsiv_Projesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1LoginAndAchive\Archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1LoginAndAchive\Archive.Designer.cs">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1LoginAndAchive\ArchiveLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1LoginAndAchive\ArchiveLoad.Designer.cs">
+      <DependentUpon>ArchiveLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2ArchiveRoom\AddArchiveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2ArchiveRoom\AddArchiveRoom.Designer.cs">
+      <DependentUpon>AddArchiveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2ArchiveRoom\DeleteArchiveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2ArchiveRoom\DeleteArchiveRoom.Designer.cs">
+      <DependentUpon>DeleteArchiveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2ArchiveRoom\ListArchiveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2ArchiveRoom\ListArchiveRoom.Designer.cs">
+      <DependentUpon>ListArchiveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2ArchiveRoom\SearchArchiveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2ArchiveRoom\SearchArchiveRoom.Designer.cs">
+      <DependentUpon>SearchArchiveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2ArchiveRoom\UpdateArchiveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2ArchiveRoom\UpdateArchiveRoom.Designer.cs">
+      <DependentUpon>UpdateArchiveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5Folder\AddFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Folder\AddFolder.Designer.cs">
+      <DependentUpon>AddFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5Folder\DeleteFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Folder\DeleteFolder.Designer.cs">
+      <DependentUpon>DeleteFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5Folder\ListFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Folder\ListFolder.Designer.cs">
+      <DependentUpon>ListFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5Folder\SearchFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Folder\SearchFolder.Designer.cs">
+      <DependentUpon>SearchFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5Folder\UpdateFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Folder\UpdateFolder.Designer.cs">
+      <DependentUpon>UpdateFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6File\AddFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6File\AddFile.Designer.cs">
+      <DependentUpon>AddFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6File\DeleteFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6File\DeleteFile.Designer.cs">
+      <DependentUpon>DeleteFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6File\ListFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6File\ListFile.Designer.cs">
+      <DependentUpon>ListFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6File\SearchFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6File\SearchFile.Designer.cs">
+      <DependentUpon>SearchFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6File\UpdateFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6File\UpdateFile.Designer.cs">
+      <DependentUpon>UpdateFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7Document\AddDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7Document\AddDocument.Designer.cs">
+      <DependentUpon>AddDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7Document\DeleteDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7Document\DeleteDocument.Designer.cs">
+      <DependentUpon>DeleteDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7Document\ListDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7Document\ListDocument.Designer.cs">
+      <DependentUpon>ListDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7Document\SearchDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7Document\SearchDocument.Designer.cs">
+      <DependentUpon>SearchDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7Document\UpdateDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7Document\UpdateDocument.Designer.cs">
+      <DependentUpon>UpdateDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud.cs" />
+    <Compile Include="DatabaseCon.cs" />
+    <Compile Include="1LoginAndAchive\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1LoginAndAchive\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="3Section\AddSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3Section\AddSection.Designer.cs">
+      <DependentUpon>AddSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3Section\DeleteSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3Section\DeleteSection.Designer.cs">
+      <DependentUpon>DeleteSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3Section\ListSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3Section\ListSection.Designer.cs">
+      <DependentUpon>ListSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3Section\SearchSectioncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3Section\SearchSectioncs.Designer.cs">
+      <DependentUpon>SearchSectioncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3Section\UpdateSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3Section\UpdateSection.Designer.cs">
+      <DependentUpon>UpdateSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4Shelf\AddShelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4Shelf\AddShelf.Designer.cs">
+      <DependentUpon>AddShelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4Shelf\DeleteShelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4Shelf\DeleteShelf.Designer.cs">
+      <DependentUpon>DeleteShelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4Shelf\ListShelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4Shelf\ListShelf.Designer.cs">
+      <DependentUpon>ListShelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4Shelf\SearchShelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4Shelf\SearchShelf.Designer.cs">
+      <DependentUpon>SearchShelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4Shelf\UpdateShelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4Shelf\UpdateShelf.Designer.cs">
+      <DependentUpon>UpdateShelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="1LoginAndAchive\ArchiveLoad.resx">
+      <DependentUpon>ArchiveLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2ArchiveRoom\AddArchiveRoom.resx">
+      <DependentUpon>AddArchiveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1LoginAndAchive\Archive.resx">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2ArchiveRoom\DeleteArchiveRoom.resx">
+      <DependentUpon>DeleteArchiveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2ArchiveRoom\ListArchiveRoom.resx">
+      <DependentUpon>ListArchiveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1LoginAndAchive\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2ArchiveRoom\SearchArchiveRoom.resx">
+      <DependentUpon>SearchArchiveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2ArchiveRoom\UpdateArchiveRoom.resx">
+      <DependentUpon>UpdateArchiveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3Section\AddSection.resx">
+      <DependentUpon>AddSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3Section\DeleteSection.resx">
+      <DependentUpon>DeleteSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3Section\ListSection.resx">
+      <DependentUpon>ListSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3Section\SearchSectioncs.resx">
+      <DependentUpon>SearchSectioncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3Section\UpdateSection.resx">
+      <DependentUpon>UpdateSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4Shelf\AddShelf.resx">
+      <DependentUpon>AddShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4Shelf\DeleteShelf.resx">
+      <DependentUpon>DeleteShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4Shelf\ListShelf.resx">
+      <DependentUpon>ListShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4Shelf\SearchShelf.resx">
+      <DependentUpon>SearchShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4Shelf\UpdateShelf.resx">
+      <DependentUpon>UpdateShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Folder\AddFolder.resx">
+      <DependentUpon>AddFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Folder\DeleteFolder.resx">
+      <DependentUpon>DeleteFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Folder\ListFolder.resx">
+      <DependentUpon>ListFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Folder\SearchFolder.resx">
+      <DependentUpon>SearchFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Folder\UpdateFolder.resx">
+      <DependentUpon>UpdateFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6File\AddFile.resx">
+      <DependentUpon>AddFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6File\DeleteFile.resx">
+      <DependentUpon>DeleteFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6File\ListFile.resx">
+      <DependentUpon>ListFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6File\SearchFile.resx">
+      <DependentUpon>SearchFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6File\UpdateFile.resx">
+      <DependentUpon>UpdateFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7Document\AddDocument.resx">
+      <DependentUpon>AddDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7Document\DeleteDocument.resx">
+      <DependentUpon>DeleteDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7Document\ListDocument.resx">
+      <DependentUpon>ListDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7Document\SearchDocument.resx">
+      <DependentUpon>SearchDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7Document\UpdateDocument.resx">
+      <DependentUpon>UpdateDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.tr-TR.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archive-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
